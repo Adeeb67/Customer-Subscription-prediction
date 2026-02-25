@@ -14,8 +14,8 @@ and identify key factors influencing customer decisions.
 ![Status](https://img.shields.io/badge/status-completed-success)
 ![Python](https://img.shields.io/badge/python-3.9+-blue)
 ![Machine Learning](https://img.shields.io/badge/domain-Machine%20Learning-purple)
-![Modeling](https://img.shields.io/badge/type-Predictive%20Modeling-green)
-![Scikit-Learn](https://img.shields.io/badge/library-Scikit--Learn-orange)
+![Type](https://img.shields.io/badge/type-Predictive%20Modeling-green)
+![Notebook](https://img.shields.io/badge/workflow-Jupyter%20Notebook-orange)
 ![Maintained](https://img.shields.io/badge/maintained-yes-brightgreen)
 
 </p>
@@ -28,31 +28,27 @@ and identify key factors influencing customer decisions.
 the **bankmarketing.csv** dataset to predict whether customers will subscribe
 to a term deposit offered through bank marketing campaigns.
 
-The project combines data preprocessing, feature engineering, and supervised
-learning models to uncover behavioral patterns and optimize marketing strategies.
+The project applies data preprocessing, encoding techniques, and multiple
+classification models to extract insights and improve marketing strategies.
 
 ---
 
 ## 🎯 Project Objective
 
-- Predict customer subscription outcomes
-- Identify influential marketing features
+- Predict term deposit subscription outcomes
 - Compare multiple machine learning models
-- Improve campaign targeting efficiency
-- Extract actionable business insights
+- Identify key factors influencing customer decisions
+- Generate actionable business insights
 
 ---
 
 ## 📂 Dataset
 
-The project uses:
-
 **bankmarketing.csv**
 
-The dataset includes customer demographics, campaign interactions,
-and marketing outcomes.
+The dataset contains customer demographics and campaign interaction details.
 
-Example features:
+Key attributes include:
 
 - Age
 - Job
@@ -68,67 +64,40 @@ Example features:
 
 ## 🧹 Data Preprocessing
 
-- Handled missing values
-- Encoded categorical variables
-- Feature transformation
-- Data normalization where required
-- Train-test split preparation
+- Data cleaning
+- Encoding categorical variables
+- Feature preparation
+- Train-test split for modeling
 
 ---
 
 ## 🤖 Machine Learning Models Used
 
-### 1️⃣ Logistic Regression
+### Logistic Regression
 - Baseline classification model
-- Interpretable probability predictions
+- Interpretable predictions
 
-### 2️⃣ Decision Tree
-- Captured nonlinear relationships
-- Easy feature interpretation
+### Decision Tree
+- Captures nonlinear relationships
+- Easy visualization of decisions
 
-### 3️⃣ Random Forest ✅
+### Random Forest ✅ (Best Performer)
 - Ensemble learning approach
-- Reduced overfitting
-- Best overall performance
+- Higher prediction accuracy
+- Better generalization
 
 ---
 
-## 📊 Model Results
+## 🔑 Key Findings
 
-After training and evaluation:
+Important features influencing subscription:
 
-- **Random Forest achieved the best performance**
-- Improved prediction stability
-- Captured complex feature interactions
+- 📞 Contact type
+- 🔁 Previous campaign outcome (poutcome)
+- 📅 Month of contact
+- ⏱️ Call duration
 
----
-
-## 🔑 Key Insights
-
-The most important factors influencing subscription:
-
-- 📞 **Contact Type**
-- 🔁 **Previous Campaign Outcome (poutcome)**
-- 📅 **Month of Contact**
-- ⏱️ **Call Duration**
-
-These insights can help banks:
-
-- Optimize campaign timing
-- Improve customer targeting
-- Increase subscription success rates
-
----
-
-## 🧠 Tech Stack
-
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib
-- Seaborn
-- Machine Learning Classification
+These insights help optimize marketing strategies and customer targeting.
 
 ---
 
@@ -137,18 +106,8 @@ These insights can help banks:
 ```
 Customer-Subscription-prediction/
 │
-├── notebooks/
-│   └── model training & analysis
-│
-├── datasets/
-│   └── bankmarketing.csv
-│
-├── models/
-│   └── trained model experiments
-│
-├── visuals/
-│   └── plots and evaluation charts
-│
+├── Bank_Term_Deposit_Summary.ipynb   # Analysis & model training
+├── bankmarketing.csv                 # Dataset
 └── README.md
 ```
 
@@ -162,7 +121,7 @@ Clone the repository:
 git clone https://github.com/Adeeb67/Customer-Subscription-prediction.git
 ```
 
-Navigate into project folder:
+Move into project folder:
 
 ```bash
 cd Customer-Subscription-prediction
@@ -171,7 +130,7 @@ cd Customer-Subscription-prediction
 Install dependencies:
 
 ```bash
-pip install -r requirements.txt
+pip install pandas numpy matplotlib seaborn scikit-learn
 ```
 
 ---
@@ -184,17 +143,22 @@ Launch Jupyter Notebook:
 jupyter notebook
 ```
 
-Open the notebook and run all cells to reproduce the analysis and models.
+Open:
+
+```
+Bank_Term_Deposit_Summary.ipynb
+```
+
+Run all cells to reproduce analysis and model results.
 
 ---
 
-## 📈 Outputs
+## 📊 Outputs
 
-- Trained classification models
 - Model performance comparison
-- Feature importance analysis
-- Prediction insights
-- Visualization charts
+- Feature importance insights
+- Prediction evaluation metrics
+- Visualization plots
 
 ---
 
@@ -205,8 +169,8 @@ This project demonstrates:
 - End-to-end Machine Learning workflow
 - Data preprocessing & encoding
 - Classification modeling
-- Model comparison techniques
-- Business-oriented ML interpretation
+- Model comparison
+- Business-focused ML interpretation
 
 ---
 
@@ -216,50 +180,6 @@ This project demonstrates:
 
 Computer Science & Data Analytics Student  
 Building real-world Machine Learning and Analytics projects.
-
----
-
-## 🍴 How to Fork & Use
-
-1. Click **Fork** (top-right of repository)
-2. Clone your fork:
-
-```bash
-git clone https://github.com/<your-username>/Customer-Subscription-prediction.git
-```
-
-3. Create a new branch:
-
-```bash
-git checkout -b feature-name
-```
-
-4. Commit changes:
-
-```bash
-git commit -m "Added improvement"
-```
-
-5. Push changes:
-
-```bash
-git push origin feature-name
-```
-
-6. Open a Pull Request 🚀
-
----
-
-## 🤝 Contributions
-
-Contributions are welcome for:
-
-- Model improvements
-- Hyperparameter tuning
-- Visualization enhancements
-- Feature engineering ideas
-
-Please open an issue before major changes.
 
 ---
 
